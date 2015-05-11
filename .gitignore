@@ -1,7 +1,6 @@
 node_modules/
 bower_components/
 dist/
-jpg/
 .sass-cache/
 .tmp/
 .idea/
