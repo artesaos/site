@@ -1,22 +1,19 @@
-body{
+.body{
 	font-size: 12px;
 	background: #ede9dc
+}
+.header{
+	height:150px;
 }
 .navbar-default{
 	background-color:#e34f42;
 }
-.navbar-default li a{
-	color:#fff !important;
+.navbar-default{
+	background-color:#e34f42;
+}
+.navbar-default .navbar-nav>li>a{
+	color:#fff;
 	font-weight: bold;
-}
-header{
-	height:150px;
-}
-h5{
-	color:#e34f42;
-	font-family: Antic;
-	font-size:14px;
-	margin:0;
 }
 .box{
 	text-align:center;
