@@ -1,17 +1,15 @@
-.body{
+body{
 	font-size: 12px;
 	background: #ede9dc
 }
-.header{
+header{
 	height:150px;
 }
-.navbar-default{
+
+.navbar-artesaos{
 	background-color:#e34f42;
 }
-.navbar-default{
-	background-color:#e34f42;
-}
-.navbar-default .navbar-nav>li>a{
+.navbar-artesaos .navbar-nav>li>a{
 	color:#fff;
 	font-weight: bold;
 }
@@ -20,15 +18,14 @@
 }
 .box .panel-heading{
 	color: #e34f42;
-	padding: 10px;
 	font-size: 14px;
 	font: Antic;
 }
+
 .box .panel-body{
 	padding-bottom:0;
-
 }
-.box .panel-body p{
+.box .panel-body>p{
 	text-align: left;
 }
 .box .box-props{
@@ -39,13 +36,17 @@
 }
 .box .box-props .box-compatible, .box .box-props .box-version{
 	float:left;
-	padding:8px 2px 4px 2px;
+	padding:4px 2px 4px 2px;
 	font-size:12px;
 }
 .box .box-props .box-compatible{
 	border-right:1px solid #ddd;
 }
-.box .box-props .box-version{}
+.box .box-props .box-compatible>h5, .box .box-props .box-version>h5{
+	color: #e34f42;
+	margin:0 0 4px 0;
+	font: Antic;
+}
 .box .panel-footer{
 	border-top:none;
 	padding:4px 0 2px 0;
@@ -56,3 +57,11 @@
 	background:#e34f42;
 	color:#fff;
 }
+
+/*
+	BOOTSTRAP
+*/
+.panel .panel-heading{
+	padding: 10px;
+}
+
