@@ -1,11 +1,3 @@
-node_modules/
-bower_components/
-dist/
-jpg/
-.sass-cache/
-.tmp/
-.idea/
 /lumen.log
 /vendor
 .env
-Thumbs.db

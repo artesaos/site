@@ -1,20 +1,12 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
 $app->get('/', function() use ($app) {
-    return $app->welcome();
+	//Puxar as views do front
+	return "<h1>Seja lecal.</h1><p>Olhe para a janela.</p>";
 });
+$app->get('/packages', function() use ($app) {
+	//Construir recursos para busca dos packages, ex:
+	$p = new App\Artesaos\Packages;
 
-$app->get('status', function () {
-	response()->json(['teste']);
+	return response()->json($p->all());
 });
