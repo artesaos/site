@@ -5,4 +5,7 @@ jpg/
 .sass-cache/
 .tmp/
 .idea/
+/lumen.log
+/vendor
+.env
 Thumbs.db
