@@ -83,6 +83,11 @@ Após enviar as modificações para seu github, você deve agora enviar para o a
 
 Pela interface do github, vá até o projeto artesão que escolheu e na opção `pull requests` escolha "New pull request", certifique-se de marcar "compare across forks" e que na comparação o "artesaos/nome-do-pacote" esteja a esquerda de "SEU-NICK-GITHUB/nome-do-pacote", daí você escolhe nos dosi lados o branch que você modificou e se certifica que suas mensagens de modificação vão aparecer logo abaixo após escolher os branchs. Tudo certificado pode clicar em "create pull request" e adicionar uma mensagem a ele e uma descrição para que a equipe Artesãos possa revisar.
 
+## Participe da comunidade
+
+Entre pra nossa comunidade [Laravel Brasil no Slack](http://laravelbrasil.vluzrmos.com.br) e fique atualizado sobre
+o andamento dos pacotes, ou tire dúvidas sobre Laravel, IDEs, PHP, dentre outras.
 
 ## Autor
+
 Vagner do Carmo vluzrmos@gmail.com.
