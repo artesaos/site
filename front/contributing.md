@@ -58,7 +58,7 @@ git add caminho/do/outro/arquivo/modificado
 ...
 ```
 
-ou, se você sabe trabalhar com git e tem conciencia dos arquivos que modificou (pode listá-los com `git status`), você pode adicionar todos de uma só vez:
+ou, se você sabe trabalhar com git e tem conciência dos arquivos que modificou (pode listá-los com `git status`), você pode adicionar todos de uma só vez:
 
 ```bash
 git add --all
@@ -67,7 +67,7 @@ git add --all
 e então criar uma mensagem de modificação:
 
 ```bash
-git commit -m "Adicinei uma nova funcionalidade muito legal"
+git commit -m "Adicionei uma nova funcionalidade muito legal"
 ```
 
 e em seguida, enviar para seu github:
