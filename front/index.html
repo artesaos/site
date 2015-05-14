@@ -1,1 +1,181 @@
-em breve.
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Artesãos, como contribuir
+  </title>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/github.min.css" rel="stylesheet"/>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   MathJax.Hub.Config({"showProcessingMessages" : false,"messageStyle" : "none","tex2jax": { inlineMath: [ [ "$", "$" ] ] }});
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+ </head>
+ <body id="MathPreviewF">
+  <h2 id="como-contribuir">
+   Como contribuir
+  </h2>
+  <p>
+   Se você gostou de algum dos nossos pacotes e gostaria de contribuir ou simplesmente criar um novo pacote, siga as instruções abaixo.
+  </p>
+  <blockquote>
+   <p>
+    É altamente recomendado que tenha boas noções de git.
+   </p>
+  </blockquote>
+  <h2 id="instalar-o-studio-um-gerenciador-para-criar-pacotes-composer">
+   Instalar o Studio, um gerenciador para criar pacotes Composer
+  </h2>
+  <p>
+   Nós recomendamos que use o pacote
+   <a href="https://github.com/franzliedke/studio">
+    franzl/studio
+   </a>
+   , ele facilitará a instalação dos pacotes
+   <b>
+    artesãos
+   </b>
+   no sua aplicação laravel ou lumen de desenvolvimento.
+  </p>
+  <p>
+   Apos instalar o franzl/studio e configurado ele no seu sistema para rodar a partir da linha de comando (terminal) e tendo instalado uma versão completamente nova do Laravel ou Lumen, escolha o pacote artesão que gostaria de contribuir:
+  </p>
+  <ul>
+   <li>
+    artesaos/defender:
+    <a href="https://github.com/artesaos/defender">
+     https://github.com/artesaos/defender
+    </a>
+   </li>
+   <li>
+    artesaos/seotools:
+    <a href="https://github.com/artesaos/seotools">
+     https://github.com/artesaos/seotools
+    </a>
+   </li>
+   <li>
+    artesaos/warehouse:
+    <a href="https://github.com/artesaos/warehouse">
+     https://github.com/artesaos/warehouse
+    </a>
+   </li>
+   <li>
+    artesaos/attacher:
+    <a href="https://github.com/artesaos/attacher">
+     https://github.com/artesaos/attacher
+    </a>
+   </li>
+   <li>
+    artesaos/zipcode:
+    <a href="https://github.com/artesaos/zipcode">
+     https://github.com/artesaos/zipcode
+    </a>
+   </li>
+   <li>
+    …
+   </li>
+  </ul>
+  <p>
+   Escolhido o pacote, acesse o pacote via github e faça um fork dele, pra que você tenha uma cópia do código fonte em seu repositório do github e possa fazer suas próprias modificações. E em seguida, na pasta da sua aplicação Laravel ou Lumen, faça o seguinte comando:
+  </p>
+  <pre><code class="bash">studio create workbench/artesaos/nome-do-pacote --git https://github.com/SEU-NICK-DO-GITHUB/nome-do-pacote 
+</code></pre>
+  <blockquote>
+   <p>
+    Nota: Se o pacote não for compativel com lumen, você deve saber dos riscos e deve ir adaptando-o até que funcione adequadamente.
+   </p>
+  </blockquote>
+  <p>
+   feito isso, o studio baixará o pacote do github e suas dependencias em
+   <code>
+    workbench/artesaos/nome-do-pacote
+   </code>
+   e já incluirá esse pacote nos autoloads do composer da aplicação principal.
+  </p>
+  <p>
+   Daí em diante você deve seguir o que diz no readme.md de cada pacote para configurá-lo na sua aplicação, geralmente eles tem um ServiceProvider e um Façade que você deve configurar em config/app.php. Em outros casos também tera que publicar configurações, views, migrations e arquivos públicos, que geralmente é satisfeito com esse comando:
+  </p>
+  <pre><code class="bash">php artisan vendor:publish
+</code></pre>
+  <p>
+   ou
+  </p>
+  <pre><code class="bash">php artisan vendor:publish --provider="Artesaos\NomeDoPacote\NomeDoPacoteServiceProvider"
+</code></pre>
+  <h2 id="dependencias-do-pacote">
+   Dependências do pacote
+  </h2>
+  <p>
+   Se você tiver que adicionar qualquer dependência ao pacote, ela deve ser feita no arquivo
+   <code>
+    workbench/artesaos/nome-do-pacote/composer.json
+   </code>
+   e então, dentro dessa pasta você deve fazer o seguinte comando no terminal:
+  </p>
+  <pre><code class="bash">composer update
+</code></pre>
+  <h2 id="enviando-para-o-servidor">
+   Enviando para o servidor
+  </h2>
+  <p>
+   Após fazer as suas modificações/contribuições para o pacote, você deve enviar o resultado para seu repositório no github, então, a partir da pasta do pacote:
+  </p>
+  <pre><code class="bash">git add caminho/do/arquivo/modificado
+git add caminho/do/outro/arquivo/modificado
+...
+</code></pre>
+  <p>
+   ou, se você sabe trabalhar com git e tem conciencia dos arquivos que modificou (pode listá-los com
+   <code>
+    git status
+   </code>
+   ), você pode adicionar todos de uma só vez:
+  </p>
+  <pre><code class="bash">git add --all
+</code></pre>
+  <p>
+   e então criar uma mensagem de modificação:
+  </p>
+  <pre><code class="bash">git commit -m "Adicinei uma nova funcionalidade muito legal"
+</code></pre>
+  <p>
+   e em seguida, enviar para seu github:
+  </p>
+  <pre><code class="bash">git push origin master
+</code></pre>
+  <blockquote>
+   <p>
+    ou o branch que estiver trabalhando
+   </p>
+  </blockquote>
+  <h2 id="enviando-ao-artesaos-um-pedido-de-merge">
+   Enviando ao Artesãos um pedido de merge
+  </h2>
+  <p>
+   Após enviar as modificações para seu github, você deve agora enviar para o artesãos as modificações que fez, para então a equipe do artesãos resoponsável possa revisar seu código e então juntar(merge) suas modificações no repositório oficial.
+  </p>
+  <p>
+   Pela interface do github, vá até o projeto artesão que escolheu e na opção
+   <code>
+    pull requests
+   </code>
+   escolha “New pull request”, certifique-se de marcar “compare across forks” e que na comparação o “artesaos/nome-do-pacote” esteja a esquerda de “SEU-NICK-GITHUB/nome-do-pacote”, daí você escolhe nos dosi lados o branch que você modificou e se certifica que suas mensagens de modificação vão aparecer logo abaixo após escolher os branchs. Tudo certificado pode clicar em “create pull request” e adicionar uma mensagem a ele e uma descrição para que a equipe Artesãos possa revisar.
+  </p>
+  <h2 id="autor">
+   Autor
+  </h2>
+  <p>
+   Vagner do Carmo
+   <a href="mailto:vluzrmos@gmail.com">vluzrmos@gmail.com</a>.
+  </p>
+ </body>
+</html>
