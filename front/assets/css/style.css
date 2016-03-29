@@ -246,3 +246,23 @@ body{
   padding-right: 15px;
   padding-left: 15px;
 }
+
+.panel-default {
+    height: 260px;
+}
+.panel-body {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.panel-description {
+    align-self: flex-start;
+}
+
+.box-props {
+    align-self: flex-end;
+    justify-content: center;
+    width: 100%;
+}
