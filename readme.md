@@ -4,7 +4,7 @@ Este é o site dos pacotes de Artesãos, criados inicialmente para serem compat�
 
 ### Requirements
 
-1. PHP 5.4
+1. PHP 5.5.9
 2. Mcrypt PHP Extension
 3. OpenSSL PHP Extension
 4. Mbstring PHP Extension
