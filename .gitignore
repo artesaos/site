@@ -5,3 +5,4 @@ dist/
 .tmp/
 .idea/
 Thumbs.db
+/front/assets/js/*
