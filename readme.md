@@ -18,5 +18,6 @@ Este é o site dos pacotes de Artesãos, criados inicialmente para serem compat�
 ### Rode o seguinte comando para a build
 
 ```javascript
-node install
+cd front
+npm install
 ```
