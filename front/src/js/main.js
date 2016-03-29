@@ -23,7 +23,7 @@ Vue.use(require('vue-resource'));
 			},
             fetchContributors: function() {
 				this.$http({
-					url: 'artesaos-contributors.json',
+					url: 'https://api.github.com/orgs/artesaos/members',
 					method: 'GET'
 				}).then(function(response){
 					this.contributors = response.data;
