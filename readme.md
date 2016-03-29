@@ -11,6 +11,13 @@ Este é o site dos pacotes de Artesãos, criados inicialmente para serem compat�
 5. Tokenizer PHP Extension
 6. Lumen Micro-Framework
 7. Node.JS
-8. Gulp
-9. Bower
-10. Angular JS
+8. Npm
+9. Gulp
+10. Vue.js
+
+### Rode o seguinte comando para a build
+
+```javascript
+cd front
+npm install
+```
