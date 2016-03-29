@@ -10,15 +10,23 @@ Vue.use(require('vue-resource'));
 		},
 		ready: function () {
 			this.fetchProjects();
-			// this.fetchContributors();
+            this.fetchContributors();
 		},
 		methods: {
 			fetchProjects: function() {
 				this.$http({
-					url: 'artesao-packages.json',
+					url: 'artesaos-packages.json',
 					method: 'GET'
 				}).then(function(response){
 					this.projects = response.data;
+				});
+			},
+            fetchContributors: function() {
+				this.$http({
+					url: 'artesaos-contributors.json',
+					method: 'GET'
+				}).then(function(response){
+					this.contributors = response.data;
 				});
 			}
 		}
