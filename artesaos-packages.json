@@ -1,0 +1,88 @@
+[
+	{
+		"project_name": "Laravel Installer",
+		"description": "Install Laravel Framework with any version you want.",
+		"url": "https://github.com/artesaos/laravel-installer",
+		"laravel_compatible": [
+			"4.2",
+			"5.0",
+			"5.1",
+			"5.2"
+		],
+		"project_version": "v1.0.0"
+	},
+	{
+		"project_name": "SEOTools",
+		"description": "SEOTools is a package for Laravel 5+ and Lumen that provides helpers for some common SEO techniques.",
+		"url": "https://github.com/artesaos/seotools",
+		"laravel_compatible": [
+			"5.0",
+			"5.1",
+			"5.2",
+			"Lumen"
+		],
+		"project_version": "v1.0.0"
+	},
+	{
+		"project_name": "Defender",
+		"description": "Defender is a Access Control List (ACL) Solution for Laravel. With security and usability in mind, this project aims to provide you a safe way to control your application access without losing the fun of coding.",
+		"url": "https://github.com/artesaos/defender",
+		"laravel_compatible": [
+			"5.1"
+		],
+		"project_version": "v0.4.6"
+	},
+	{
+		"project_name": "Zenvia PHP",
+		"description": "This package integrate the Zenvia SMS Gateway API 2.0 with your PHP application, built with PSR-7 in mind.",
+		"url": "https://github.com/artesaos/zenvia-php",
+		"laravel_compatible": [
+			"Under Development"
+		],
+		"project_version": "v0.0.1"
+	},
+	{
+		"project_name": "Warehouse",
+		"description": "Artesãos Warehouse V2 - A simple and direct approach to repositories!",
+		"url": "https://github.com/artesaos/warehouse",
+		"laravel_compatible": [
+			"5.0",
+			"5.1",
+			"5.2"
+		],
+		"project_version": "v1.0.1"
+	},
+	{
+		"project_name": "Laravel Linkedin",
+		"description": "Linkedin API integration for Laravel and Lumen 5 (wrapper for Happyr/LinkedIn-API-client)",
+		"url": "https://github.com/artesaos/laravel-linkedin",
+		"laravel_compatible": [
+			"5.0",
+			"5.1",
+			"5.2",
+			"Lumen"
+		],
+		"project_version": "v1.0.0"
+	},
+	{
+		"project_name": "Laravel Linkedin",
+		"description": "Annex and do what you want with your pictures! (Upload for S3, Copy, Local, Anything and attach images in your Models)",
+		"url": "https://github.com/artesaos/attacher",
+		"laravel_compatible": [
+			"5.0",
+			"5.1",
+			"5.2",
+			"Lumen"
+		],
+		"project_version": "v0.6.4"
+	},
+	{
+		"project_name": "CidadesBR",
+		"description": "Laravel database for Brazil`s cities",
+		"url": "https://github.com/artesaos/cidadesbr",
+		"laravel_compatible": [
+			"5.0"
+		],
+		"project_version": "v1.0.2"
+	}
+]
