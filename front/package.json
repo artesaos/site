@@ -1,0 +1,36 @@
+{
+  "name": "site-artesaos",
+  "version": "0.0.1",
+  "description": "Site da comunidade artesãos br",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icarcal/site.git"
+  },
+  "keywords": [
+    "artesaos",
+    "laravel",
+    "comunidade"
+  ],
+  "author": "Comunidade Artesãos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icarcal/site/issues"
+  },
+  "homepage": "https://github.com/icarcal/site#readme",
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "vue": "^1.0.20",
+    "vue-resource": "^0.7.0"
+  }
+}
