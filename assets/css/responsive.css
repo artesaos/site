@@ -1,0 +1,285 @@
+/* ---------------------------------------------------------------------------- */
+/* MEDIA QUERIES -------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+ 
+/**
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ */
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    /* Styles */
+	.s_descr_wrap{
+		padding:0px;
+	}
+ .plan.standout{
+	top:0px;
+}
+.sf-logo{
+	display:none;
+	text-align:center;
+}
+
+.address{
+	float:none;
+	margin-left:15px;
+	text-align:center;
+}
+.s-phone, .s-mail {
+    padding: 0px 15px;
+	float:none;
+	text-align:center;
+	margin-right:0px;
+}
+.address span, .s-phone span, .s-mail span{
+	display:block;
+	text-align:center;
+}
+.top_text .btn{
+	margin: 10px 5px;
+}
+
+.top_wrapper .top_descr .top_centered{
+	padding-top: 20px;
+}
+.timeline_container .left .timeline_item{
+	margin-right:0px;
+}
+.timeline_container .left{
+	padding-bottom:0px;
+}
+.timeline_container .right{
+	padding-top: 0px;
+}
+.timeline_container .right .timeline_item{
+	margin-left:0px;
+
+}
+.timeline_container .right .timeline_item  .time_pin, .timeline_container .left .timeline_item  .time_pin{
+	display:none;
+}
+.timeline_container .left .timeline_item:before, .timeline_container .right .timeline_item:before{
+	display:none;
+}
+   .podrt_descr p {
+    margin-left:30px;
+	}
+  .podrt_descr h3 {
+   margin-left:30px;
+	}
+.podrt_descr .header_line{
+	margin-left:30px;
+    }
+  
+.purchase_i{
+	display:none;
+}
+.u-comment{
+	background-position: 10px 0px;
+}
+.u-comment > div{
+	   background-position: 97% 100%;
+}
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px)
+and (max-width : 480px) {
+    /* Styles */
+	.s_descr_wrap{
+		padding:0px;
+	}
+ .plan.standout{
+	top:0px;
+}
+.sf-logo{
+	display:none;
+}
+.sf-logo img{
+	margin-left: 15px;
+}
+.address{
+	float:none;
+	margin-left:15px;
+}
+.s-phone, .s-mail {
+    padding: 0px 15px;
+	float:none;
+}
+.top_text .btn{
+	margin: 10px 5px;
+}
+
+.top_wrapper .top_descr .top_centered{
+	padding-top: 20px;
+}
+.timeline_container .left .timeline_item{
+	margin-right:0px;
+}
+.timeline_container .left{
+	padding-bottom:0px;
+}
+.timeline_container .right{
+	padding-top: 0px;
+}
+.timeline_container .right .timeline_item{
+	margin-left:0px;
+	
+}
+.timeline_container .right .timeline_item  .time_pin, .timeline_container .left .timeline_item  .time_pin{
+	display:none;
+}
+.timeline_container .left .timeline_item:before, .timeline_container .right .timeline_item:before{
+	display:none;
+}
+  .podrt_descr p {
+    margin-left:30px;
+	}
+  .podrt_descr h3 {
+   margin-left:30px;
+	}
+.podrt_descr .header_line{
+	margin-left:30px;
+    }
+.purchase_i{
+	display:none;
+}
+.u-comment{
+	background-position: 10px 0px;
+}
+.u-comment > div{
+	   background-position: 97% 100%;
+}
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-width : 481px)
+and (max-width : 768px) {
+    /* Styles */
+	.s_descr_wrap{
+		padding:0px;
+	}
+  .plan.standout{
+	top:0px;
+}
+.sf-logo{
+	display:none;
+}
+.sf-logo img{
+	margin-left: 15px;
+}
+.address{
+	float:none;
+	margin-left:15px;
+}
+.s-phone, .s-mail {
+    padding: 0px 15px;
+	float:none;
+}
+.top_text .btn{
+	margin: 10px 5px;
+}
+.timeline_container .left .timeline_item{
+	margin-right:0px;
+}
+.timeline_container .left{
+	padding-bottom:0px;
+}
+.timeline_container .right{
+	padding-top: 0px;
+}
+.timeline_container .right .timeline_item{
+	margin-left:0px;
+	
+}
+.timeline_container .right .timeline_item  .time_pin, .timeline_container .left .timeline_item  .time_pin{
+	display:none;
+}
+.timeline_container .left .timeline_item:before, .timeline_container .right .timeline_item:before{
+	display:none;
+}
+  .podrt_descr p {
+    margin-left:30px;
+	}
+  .podrt_descr h3 {
+   margin-left:30px;
+	}
+.podrt_descr .header_line{
+	margin-left:30px;
+    }
+.purchase_i{
+	display:none;
+}
+.u-comment{
+	background-position: 10px 0px;
+}
+.u-comment > div{
+	   background-position: 97% 100%;
+}
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-width : 769px) 
+and (max-width : 1024px) {
+    /* Styles */
+	.s_descr_wrap{
+		padding:0px;
+	}
+	  .plan.standout{
+	top:0px;
+}
+	.sf-logo{
+	display:none;
+	border:0px;
+}
+.address{
+	
+	margin-left:15px;
+}
+.s-phone, .s-mail {
+    padding: 0px 15px;
+	
+}
+.address span, .s-phone span, .s-mail span{
+	display:block;
+	text-align:center;
+}
+.address, .s-phone, .s-mail{
+	margin-right:0px;
+	float:left;
+	width:32%;
+	text-align:center;
+}
+}
+ 
+/* Larger screens ----------- */
+
+@media only screen 
+and (min-width : 1024px) 
+and (max-width : 1200px) {
+    /* Styles */
+ .s-phone, .s-mail {
+   margin-right:25px;
+}
+}
