@@ -115,53 +115,15 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12 text-center member">
-                        <a href="#">
-                            <img src="assets/images/member.png" alt="" class="img-rounded img-responsive"/>
+
+                    <div class="col-md-4 col-sm-4 col-xs-12 text-center member" v-for="contributor in contributors">
+                        <a href="{{ contributor.url }}" target="_blank">
+                            <img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }} avatar"
+                                 class="img-rounded img-responsive"/>
                         </a>
-                        <a class="name">Lorem Ipsum</a>
-                        <span class="nick-name">nickname</span>
+                        <a class="name">{{ contributor.login }}</a>
                     </div>
 
-                    <div class="col-md-4 col-sm-4 col-xs-12 text-center member">
-                        <a href="#">
-                            <img src="assets/images/member.png" alt="" class="img-rounded img-responsive"/>
-                        </a>
-                        <a class="name">Lorem Ipsum</a>
-                        <span class="nick-name">nickname</span>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 col-xs-12 text-center member">
-                        <a href="#">
-                            <img src="assets/images/member.png" alt="" class="img-rounded img-responsive"/>
-                        </a>
-                        <a class="name">Lorem Ipsum</a>
-                        <span class="nick-name">nickname</span>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 col-xs-12 text-center member">
-                        <a href="#">
-                            <img src="assets/images/member.png" alt="" class="img-rounded img-responsive"/>
-                        </a>
-                        <a class="name">Lorem Ipsum</a>
-                        <span class="nick-name">nickname</span>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 col-xs-12 text-center member">
-                        <a href="#">
-                            <img src="assets/images/member.png" alt="" class="img-rounded img-responsive"/>
-                        </a>
-                        <a class="name">Lorem Ipsum</a>
-                        <span class="nick-name">nickname</span>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 col-xs-12 text-center member">
-                        <a href="#">
-                            <img src="assets/images/member.png" alt="" class="img-rounded img-responsive"/>
-                        </a>
-                        <a class="name">Lorem Ipsum</a>
-                        <span class="nick-name">nickname</span>
-                    </div>
                 </div>
             </div>
         </section>

@@ -1,8 +1,4 @@
 node_modules/
-bower_components/
 dist/
-.sass-cache/
-.tmp/
 .idea/
-Thumbs.db
-/front/assets/js/*
+/assets/js/*
