@@ -1,4 +1,22 @@
+var Vue = require('vue');
+var _ = require('lodash');
+var $ = jQuery = require ('jquery');
+
+Vue.use(require('vue-resource'));
+require('bootstrap');
+
 (function () {
+    $(".top_text h1").addClass("fadeInDown animated");
+    $(".top_text p").addClass("fadeInUp animated");
+
+    function heightDetect() {
+        $(".top").css("height", $(window).height());
+    };
+    heightDetect();
+    $(window).resize(function() {
+        heightDetect();
+    });
+
     new Vue({
         el: '.app',
         data: {
@@ -44,7 +62,6 @@
             },
             page: function (ev, page) {
                 ev.preventDefault();
-                console.log(page);
                 this.pagination.currentPage = page;
                 this.projects = this.pagination.paginated[page - 1];
             },
@@ -67,4 +84,4 @@
             }
         }
     });
-})(Vue);
+})(Vue, $, _);
