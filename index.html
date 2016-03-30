@@ -87,19 +87,19 @@
             <div class="text-center">
                 <nav>
                     <ul class="pagination">
-
-                        <li class="disabled">
-                            <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                        <li v-bind:class="{disabled:pagination.currentPage == 1}">
+                            <a href="#" aria-label="Previous" v-on:click="previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
                         </li>
-                        <li class="active">
-                            <a href="#">1 <span class="sr-only">(current)</span></a>
+                        <li
+                            v-for="(index, pag) in pagination.pagesNumbers"
+                            v-bind:class="{active:pagination.currentPage == pag}"
+                        >
+                            <a href="#" v-on:click="page($event, pag)">{{ pag }}</a>
                         </li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
+                        <li v-bind:class="{disabled:pagination.currentPage==pagination.totalPages}">
+                            <a href="#" aria-label="Next" v-on:click="next">
                                 <span aria-hidden="true">&raquo;</span>
                             </a>
                         </li>
@@ -173,7 +173,10 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js" charset="utf-8"></script>
+        <script src="node_modules/vue/dist/vue.js"></script>
+        <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
 
-        <script src="assets/js/main.min.js"></script>
+        <script src="src/js/lodash.js"></script>
+        <script src="src/js/main.js"></script>
     </body>
 </html>
