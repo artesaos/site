@@ -1,3 +1,10 @@
+var Vue = require('vue');
+var _ = require('lodash');
+var $ = jQuery = require ('jquery');
+
+Vue.use(require('vue-resource'));
+require('bootstrap');
+
 (function () {
     new Vue({
         el: '.app',
@@ -44,7 +51,6 @@
             },
             page: function (ev, page) {
                 ev.preventDefault();
-                console.log(page);
                 this.pagination.currentPage = page;
                 this.projects = this.pagination.paginated[page - 1];
             },
@@ -67,4 +73,4 @@
             }
         }
     });
-})(Vue);
+})(Vue, $, _);
