@@ -10,9 +10,16 @@ body{
 	/* Margin bottom by footer height */
 	margin-bottom: 100px;
 }
-
+section {
+    min-height: 600px;
+}
 
 /* START CUSTOM NAVBAR */
+#artesaos-navbar .navbar-right.social img {
+    max-height: 40px;
+    margin-top: -10px;
+    float: left;
+}
 #artesaos-navbar.navbar-default .navbar-brand {
     color: rgba(255, 255, 255, 1);
     margin-top: -10px;
@@ -46,11 +53,11 @@ body{
     background-color: #fb5d42;
 }
 #artesaos-navbar.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fb5d42;
+    background-color: #ffffff;
 }
 #artesaos-navbar.navbar-default .navbar-toggle:hover .icon-bar,
 #artesaos-navbar.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #fb5d42;
+    background-color: #ffffff;
 }
 /* END CUSTOM NAVBAR */
 .box{
@@ -107,8 +114,9 @@ body{
 
 /* PACKAGES SECTION */
 .packages{
-  min-height: 600px;
-  padding: 23px 0;
+    min-height: 600px;
+    margin-top: 60px;
+  /*padding: 23px 0;*/
 }
 
 .packages h1{
@@ -205,6 +213,48 @@ body{
 }
 /* END PACKAGES */
 
+/*	ABOUT US SECTION */
+#about-us {
+    background-color: #ffffff;
+    padding-bottom: 10px;
+}
+#about-us a {
+    cursor: pointer;
+    color: black;
+}
+#about-us h2 {
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-size: 60px;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#about-us .member {
+    margin-bottom: 20px;
+    min-width: 150px;
+}
+#about-us .member img {
+    max-height: 180px;
+    border-radius: 50%;
+    border: 4px solid #F2AD9D;
+    display: inline !important;
+}
+#about-us .member .name, #about-us .member .nick-name {
+    display: block;
+}
+#about-us .member .name {
+    margin-top: 10px;
+    font-weight: 600;
+    text-decoration: none;
+}
+#about-us .member .nick-name {
+    font-weight: 400;
+    text-decoration: none;
+}
+/*	END ABOUT US SECTION */
+
 
 /*	CONTRIBUIR SECTION */
 .contribuir{
@@ -216,13 +266,17 @@ body{
 	letter-spacing: 3px;
   font-weight: 200;
   font-size: 60px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+    word-wrap: break-word;
   color: #FFF;
 }
 .contribuir h3{
   font-weight: 400;
   letter-spacing: 2px;
+}
+.contribuir .container p{
+    text-align: justify;
 }
 /* END CONTRIBUIR SECTION */
 
