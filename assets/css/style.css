@@ -15,6 +15,7 @@ body{
 /* START CUSTOM NAVBAR */
 #artesaos-navbar.navbar-default .navbar-brand {
     color: rgba(255, 255, 255, 1);
+    margin-top: -10px;
 }
 #artesaos-navbar.navbar-default {
     font-size: 14px;
