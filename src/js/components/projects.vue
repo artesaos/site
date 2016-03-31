@@ -43,21 +43,18 @@
             this.pagination.pagesNumbers = _.range(1, this.pagination.totalPages + 1);
           });
       },
-      page: function (ev, page) {
-        ev.preventDefault();
+      page: function (page) {
         this.pagination.currentPage = page;
         this.projects = this.pagination.paginated[page - 1];
       },
-      next: function (ev) {
+      next: function () {
         var self = this;
-        ev.preventDefault();
         if(self.pagination.currentPage < self.pagination.totalPages) {
           self.pagination.currentPage = self.pagination.currentPage + 1;
           self.projects = self.pagination.paginated[self.pagination.currentPage - 1];
         }
       },
-      previous: function (ev) {
-        ev.preventDefault();
+      previous: function () {
         if(this.pagination.currentPage > 1) {
           this.pagination.currentPage = this.pagination.currentPage - 1;
           this.projects = this.pagination.paginated[this.pagination.currentPage - 1];
@@ -89,15 +86,15 @@
         <nav>
           <ul class="pagination">
               <li v-bind:class="{disabled:pagination.currentPage == 1}">
-                <a href="#" aria-label="Previous" v-on:click="previous">
+                <a href="#" aria-label="Previous" v-on:click.prevent="previous">
                     <span aria-hidden="true">«</span>
                 </a>
               </li>
               <li v-for="(index, pag) in pagination.pagesNumbers" v-bind:class="{active:pagination.currentPage == pag}">
-                <a href="#" v-on:click="page($event, pag)">{{ pag }}</a>
+                <a href="#" v-on:click.prevent="page(pag)">{{ pag }}</a>
               </li>
               <li v-bind:class="{disabled:pagination.currentPage==pagination.totalPages}">
-                <a href="#" aria-label="Next" v-on:click="next">
+                <a href="#" aria-label="Next" v-on:click.prevent="next">
                   <span aria-hidden="true">»</span>
                 </a>
               </li>
