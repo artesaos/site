@@ -42,6 +42,16 @@ section {
 		background-position: 50% 50% !important;
 	  background-size: cover;
  }
+
+ .developers {
+	 overflow:hidden;
+	 min-height: 480px;
+	 padding-top: 80px;
+	 background: #fff;
+	 background-position: 50% 50% !important;
+	 background-size: cover;
+ }
+
  .top_overlay{
 	position:absolute;
 	top:0px;
@@ -402,3 +412,31 @@ section {
   border-bottom-right-radius: 3px;
 }
 /* END PACKAGES */
+
+/* ==========================================================
+! Section Our Developers
+========================================================== */
+.developers{
+    min-height: 600px;
+}
+.team h2 {
+  margin-bottom: 8px;
+}
+.team-member {
+  text-align: center;
+  margin-top: 48px;
+}
+.team-member img {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.team-member h5 {
+  margin-bottom: 8px;
+}
+.team-member .social-icons {
+  margin-top: 8px;
+}
+.team-member .social-icons li {
+	list-style-type: none;
+	display: inline
+}
