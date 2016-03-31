@@ -366,7 +366,7 @@ section {
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
-  color: #FB5D42 !important;
+  color: #d64541 !important;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -386,7 +386,7 @@ section {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #23527c;
+  color: #d64541;
   background-color: #eee;
   border-color: #ddd;
 }
@@ -399,8 +399,8 @@ section {
   z-index: 2;
   color: #fff !important;
   cursor: default;
-  background-color: #FB5D42 !important;
-  border-color: #FB5D42 !important;
+  background-color: #d64541 !important;
+  border-color: #d64541 !important;
 }
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
