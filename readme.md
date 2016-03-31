@@ -6,4 +6,5 @@ Este é o site dos pacotes de Artesãos, criados inicialmente para serem compat�
 
 ```js
 npm install
+npm run server
 ```
