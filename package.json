@@ -27,6 +27,7 @@
     "bootstrap": "^3.3.6",
     "browserify": "^13.0.0",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
     "gulp-concat-css": "^2.2.0",
     "gulp-cssmin": "^0.1.7",
     "gulp-sourcemaps": "^1.6.0",
@@ -41,5 +42,16 @@
   },
   "devDependencies": {
     "http-server": "^0.9.0"
+  },
+  "gulp-config": {
+    "vendors": {
+      "js": [
+        "node_modules/jquery/dist/jquery.min.js",
+        "node_modules/bootstrap/dist/js/bootstrap.min.js"
+      ],
+      "css": [
+        "node_modules/bootstrap/dist/css/bootstrap.min.css"
+      ]
+    }
   }
 }

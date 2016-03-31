@@ -3,3 +3,4 @@ dist/
 .idea/
 *.map
 /assets/**/*.min.*
+/assets/**/*vendors.*
