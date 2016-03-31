@@ -62,66 +62,8 @@
 		</div>
 	</div>
 </section>
-<!-- section PACKAGES -->
-<section class="packages">
-  <div class="container">
-		<div class="row">
-      <div class="section_header">
-				<h2>NOSSOS PACOTES</h2>
-				<span class="header_line"></span>
-      </div>
-
-      <div class="row">
-                <div class="col-md-3" v-for="project in projects">
-                    <div class="panel panel-default box">
-                        <div class="panel-heading box-heading">{{project.project_name}}</div>
-                        <div class="panel-body">
-                            <p class="panel-description">{{project.description}}</p>
-
-                            <div class="box-props">
-                                <div class="row">
-                                    <div class="col-md-6 col-xs-6 box-compatible">
-                                        <h5>Compatible</h5>
-                                        <span>{{project.laravel_compatible}}</span>
-                                    </div>
-                                    <div class="col-md-6 col-xs-6 box-version">
-                                        <h5>Version</h5>
-                                        <span>{{project.project_version}}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="{{ project.url }}" target="_blank">
-                            <div class="panel-footer">
-                                <span class="glyphicon glyphicon-plus-sign"></span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div><!-- /row -->
-    </div>
-
-    <div class="text-center">
-        <nav>
-            <ul class="pagination">
-                <li v-bind:class="{disabled:pagination.currentPage == 1}">
-                    <a href="#" aria-label="Previous" v-on:click="previous">
-                        <span aria-hidden="true">«</span>
-                    </a>
-                </li>
-                <li v-for="(index, pag) in pagination.pagesNumbers" v-bind:class="{active:pagination.currentPage == pag}">
-                    <a href="#" v-on:click="page($event, pag)">{{ pag }}</a>
-                </li>
-                <li v-bind:class="{disabled:pagination.currentPage==pagination.totalPages}">
-                    <a href="#" aria-label="Next" v-on:click="next">
-                        <span aria-hidden="true">»</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-  </div>
-</section>
+  <!-- section PACKAGES -->
+  <projects></projects>
 
   <script src="assets/js/vendors.js"></script>
   <script src="assets/js/app.min.js"></script>
