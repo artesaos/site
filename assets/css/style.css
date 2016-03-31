@@ -74,7 +74,7 @@ section {
 	overflow:hidden;
 	min-height: 800px;
 	padding-top: 0px;
-	background:url("../images/bg3.jpg")no-repeat fixed;
+	background:url("../images/bg3.svg")no-repeat fixed;
 	background-position: 50% 50% !important;
   background-size: cover;
  }
@@ -84,7 +84,6 @@ section {
 		min-height: 480px;
 		padding-top: 80px;
 		background: #1e2a38;
-		/*background:url("../images/bg2.png")no-repeat fixed;*/
 		background-position: 50% 50% !important;
 	  background-size: cover;
  }
