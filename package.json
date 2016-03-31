@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/icarcal/site.git"
+    "url": "git+https://github.com/artesaos/site.git"
   },
   "keywords": [
     "artesaos",
@@ -24,9 +24,9 @@
   "author": "Comunidade Artesãos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/icarcal/site/issues"
+    "url": "https://github.com/artesaos/site/issues"
   },
-  "homepage": "https://github.com/icarcal/site#readme",
+  "homepage": "https://github.com/artesaos/site#readme",
   "dependencies": {
     "bootstrap": "^3.3.6",
     "browserify": "^13.0.0",
