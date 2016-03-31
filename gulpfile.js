@@ -7,6 +7,15 @@ var buffer = require('vinyl-buffer');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var gutil = require('gulp-util');
+var cssmin = require('gulp-cssmin');
+var concatCss = require('gulp-concat-css');
+
+gulp.task('styles', function () {
+  return gulp.src('./src/css/*.css')
+    .pipe(concatCss("style.min.css"))
+    .pipe(cssmin())
+    .pipe(gulp.dest('./assets/css'));
+});
 
 gulp.task('browserify', function () {
   // set up the browserify instance on a task basis
@@ -26,4 +35,4 @@ gulp.task('browserify', function () {
     .pipe(gulp.dest('./assets/js/'));
 });
 
-gulp.task('default', ['browserify']);
+gulp.task('default', ['browserify', 'styles']);
