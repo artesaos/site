@@ -148,6 +148,9 @@ section {
 #artesaos-navbar.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #ffffff;
 }
+#artesaos-navbar.navbar-default .social a {
+    padding: 0 15px !important;
+}
 
 /* ==========================================================
 ! Top
