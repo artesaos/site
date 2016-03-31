@@ -10,6 +10,7 @@ var gutil = require('gulp-util');
 var cssmin = require('gulp-cssmin');
 var concatCss = require('gulp-concat-css');
 var concat = require('gulp-concat');
+var vueify = require('vueify');
 
 gulp.task('styles:main', function () {
   return gulp.src('./src/css/*.css')
@@ -40,6 +41,8 @@ gulp.task('scripts:main', function () {
     entries: './src/js/index.js',
     debug: true
   });
+
+  b.transform(vueify);
 
   return b.bundle()
     .pipe(source('app.min.js'))
