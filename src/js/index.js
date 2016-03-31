@@ -1,2 +1,2 @@
 require('./common.js');
-require('./main.js');
+require('./app.js');
