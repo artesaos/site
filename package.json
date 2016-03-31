@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "gulp",
+    "server": "node_modules/http-server/bin/http-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -35,5 +36,8 @@
     "vinyl-source-stream": "^1.1.0",
     "vue": "^1.0.20",
     "vue-resource": "^0.7.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
   }
 }
