@@ -213,6 +213,33 @@ section {
 }
 /* END PACKAGES */
 
+.content-section {
+    padding-top: 65px;
+}
+
+/* ABOUT SECTION */
+.about{
+  min-height: 600px;
+  background-color:#FB5D42;
+  padding-bottom: 80px;
+}
+.about-text p {
+  color: #FFF;
+  font-size: 24px;
+
+}
+.about-logo{
+  height: 40%;
+  width: 40%;
+  display: inline-block;
+}
+
+.about > .container > div > div {
+  text-align: center;
+}
+
+/* END ABOUT SECTION */
+
 /*	ABOUT US SECTION */
 #about-us {
     background-color: #ffffff;
@@ -258,18 +285,21 @@ section {
 
 /*	CONTRIBUIR SECTION */
 .contribuir{
-  background: #F2AD9D;
-  padding: 23px 0;
-  color: #2B2C26;
+  background: #ffffff; 
+  padding-bottom: 23px;
 }
-.contribuir h2{
-	letter-spacing: 3px;
-  font-weight: 200;
-  font-size: 60px;
-  margin: 0;
-  padding: 0;
+.contribuir a {
+    cursor: pointer;
+    color: black;
+}
+.contribuir h2 {
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-size: 60px;
     word-wrap: break-word;
-  color: #FFF;
+    word-break: break-all;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .contribuir h3{
   font-weight: 400;
@@ -278,6 +308,56 @@ section {
 .contribuir .container p{
     text-align: justify;
 }
+
+.art-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.art-callout-warning > h4 {
+    color: #aa6708;
+    font-weight: bold;
+}
+
+.art-callout-danger {
+    border-left-color: #ce4844;
+}
+.art-callout-warning {
+    border-left-color: #aa6708;
+}
+.highlight {
+    padding: 9px 14px;
+    margin: 14px 0px 14px 0px;
+    background-color: #020202;
+    border: 1px solid #020202;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.67);
+    -moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.67);
+    box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.67);
+}
+
+.highlight > pre {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    word-break: normal;
+    white-space: nowrap;
+    background-color: rgb(0, 0, 0);
+    border: 0;
+}
+
+.highlight > pre > code {
+    font-size: inherit;    
+    color: #ffffff;
+}
+
+figure {
+    margin: 0;
+}
+
+
 /* END CONTRIBUIR SECTION */
 
 
