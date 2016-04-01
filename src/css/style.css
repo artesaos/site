@@ -440,3 +440,10 @@ section {
 	list-style-type: none;
 	display: inline
 }
+
+.team-member img{
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    border: 1px solid black;
+}

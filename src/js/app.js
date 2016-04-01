@@ -19,7 +19,7 @@ new Vue({
     contributors: []
   },
   ready: function () {
-    //this.fetchContributors();
+    this.fetchContributors();
   },
   methods: {
     fetchContributors: function () {
