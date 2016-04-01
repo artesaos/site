@@ -11,9 +11,8 @@ var cssmin = require('gulp-cssmin');
 var concatCss = require('gulp-concat-css');
 var concat = require('gulp-concat');
 var vueify = require('vueify');
-var watch = require('gulp-watch')
-var watch = require('gulp-livereload')
-
+var browserSync = require('browser-sync').create();
+var reload      = browserSync.reload;
 
 gulp.task('styles:main', function () {
   return gulp.src('./src/css/*.css')
@@ -60,16 +59,27 @@ gulp.task('scripts:main', function () {
 
 gulp.task('scripts', ['scripts:main', 'scripts:vendors'])
 
-gulp.task('watch:styles', function (){
-  livereload.listen();
-  gulp.watch('./src/css/*.css', ['styles']);
-})
+gulp.task('watch-css', ['styles'], function(){
+  browserSync.reload();
+});
 
-gulp.task('watch:scripts', function (){
-  livereload.listen();
-  gulp.watch('./src/js/*.js', ['scripts']);
-})
+gulp.task('watch-js', ['scripts'], function(){
+  browserSync.reload()
+});
 
-gulp.task('watch', ['watch:styles', 'watch:scripts'])
+gulp.task('serve', ['scripts', 'styles'], function () {
+
+    // Serve files from the root of this project
+    browserSync.init({
+        server: "./",
+        port: 8080,
+    });
+
+    // add browserSync.reload to the tasks array to make
+    // all browsers reload after tasks are complete.
+    gulp.watch('./src/css/*.css', ['watch-css']);
+    gulp.watch('./src/js/*.js', ['watch-js']);
+    gulp.watch("*.html").on("change", reload);
+});
 
 gulp.task('default', ['scripts', 'styles']);
