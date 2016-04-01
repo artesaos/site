@@ -10,6 +10,9 @@
     "build:styles": "gulp styles",
     "build:scripts": "gulp scripts",
     "build:dev": "gulp scripts:main",
+    "watch": "gulp watch",
+    "watch:styles": "gulp watch:styles",
+    "watch:scripts": "gulp watch:scripts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -37,6 +40,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
     "jquery": "^2.2.2",
     "lodash": "^4.6.1",
     "vinyl-buffer": "^1.0.0",

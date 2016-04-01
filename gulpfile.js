@@ -11,6 +11,7 @@ var cssmin = require('gulp-cssmin');
 var concatCss = require('gulp-concat-css');
 var concat = require('gulp-concat');
 var vueify = require('vueify');
+var watch = require('gulp-watch')
 
 gulp.task('styles:main', function () {
   return gulp.src('./src/css/*.css')
@@ -56,5 +57,15 @@ gulp.task('scripts:main', function () {
 });
 
 gulp.task('scripts', ['scripts:main', 'scripts:vendors'])
+
+gulp.task('watch:styles', function (){
+  gulp.watch('./src/css/*.css', ['styles']);
+})
+
+gulp.task('watch:scripts', function (){
+  gulp.watch('./src/js/*.js', ['scripts']);
+})
+
+gulp.task('watch', ['watch:styles', 'watch:scripts'])
 
 gulp.task('default', ['scripts', 'styles']);
