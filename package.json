@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "gulp",
-    "start": "node_modules/http-server/bin/http-server",
+    "serve": "gulp serve",
     "build": "gulp",
     "build:styles": "gulp styles",
     "build:scripts": "gulp scripts",
@@ -37,6 +37,8 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "browser-sync": "^2.11.2",
     "jquery": "^2.2.2",
     "lodash": "^4.6.1",
     "vinyl-buffer": "^1.0.0",

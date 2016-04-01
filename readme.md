@@ -14,4 +14,7 @@ npm run build
 npm run build:styles
 npm run build:scripts
 npm run build:dev
+npm run watch
+npm run watch:styles
+npm run watch:scripts
 ```
