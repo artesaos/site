@@ -2,5 +2,6 @@ node_modules/
 dist/
 .idea/
 *.map
+*.log
 /assets/**/*.min.*
 /assets/**/*vendors.*
