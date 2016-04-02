@@ -1,2 +1,2 @@
-require('./common.js');
-require('./app.js');
+require('src::common.js');
+require('src::app.js');

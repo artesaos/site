@@ -1,5 +1,5 @@
 <script>
-    var project = require('./project.vue');
+    var project = require('components::project.vue');
     module.exports = {
         components: {
             project: project,

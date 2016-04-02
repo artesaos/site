@@ -1,6 +1,7 @@
 'use strict';
 var pkgConf = require('./package.json')["gulp-config"];
 var gulp = require('gulp');
+var path = require('path');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
@@ -11,8 +12,10 @@ var cssmin = require('gulp-cssmin');
 var concatCss = require('gulp-concat-css');
 var concat = require('gulp-concat');
 var vueify = require('vueify');
+var pathmodify = require('pathmodify');
 var browserSync = require('browser-sync').create();
 var reload      = browserSync.reload;
+var shortify = require('shortify');
 
 gulp.task('styles:main', function () {
   return gulp.src('./src/css/*.css')
@@ -44,6 +47,12 @@ gulp.task('scripts:main', function () {
     debug: true
   });
 
+  var transform = shortify({
+      'src::': (path.join(__dirname, '/src/js/') + path.sep),
+      'components::': (path.join(__dirname, '/src/js/components/') + path.sep)
+    });
+
+  b.transform(transform);
   b.transform(vueify);
 
   return b.bundle()

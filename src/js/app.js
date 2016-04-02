@@ -2,8 +2,8 @@ var _ = require('lodash');
 var Vue = require('vue');
 
 Vue.use(require('vue-resource'));
-Vue.component('projects', require('./components/projects.vue'));
-Vue.component('developers', require('./components/developers.vue'));
+Vue.component('projects', require('src::components/projects.vue'));
+Vue.component('developers', require('src::components/developers.vue'));
 
 new Vue({
     el: 'body',

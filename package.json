@@ -29,6 +29,7 @@
   "homepage": "https://github.com/artesaos/site#readme",
   "dependencies": {
     "bootstrap": "^3.3.6",
+    "browser-sync": "^2.11.2",
     "browserify": "^13.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
@@ -38,9 +39,9 @@
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
-    "browser-sync": "^2.11.2",
     "jquery": "^2.2.2",
     "lodash": "^4.6.1",
+    "shortify": "0.0.6",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "vue": "^1.0.20",

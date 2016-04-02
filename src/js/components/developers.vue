@@ -1,5 +1,5 @@
 <script xmlns:v-bind="http://www.w3.org/1999/xhtml">
-    var developer = require('./developer.vue');
+    var developer = require('components::developer.vue');
     module.exports = {
         components: {
             developer: developer,
