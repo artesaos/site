@@ -86,6 +86,7 @@ section {
 }
 #artesaos-navbar.navbar-default .navbar-nav>li>a {
     color: #555555;
+    font-weight: bold;
     background-color: transparent;
 }
 #artesaos-navbar.navbar-default .navbar-nav>li>a:hover,
