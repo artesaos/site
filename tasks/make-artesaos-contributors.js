@@ -7,7 +7,7 @@ const StoreJson = require('./libs/store-json.js');
 const USER = 'artesaos';
 const CONSTRIBUTORS_FILE = path.join(__dirname, '../artesaos-contributors.json');
 
-const ContributorsByOrg = new ContributorsLoaderByOrg(USER, GITHUB_AUTH_TOKEN, ['laravel-docs']);
+const ContributorsByOrg = new ContributorsLoaderByOrg(USER, GITHUB_AUTH_TOKEN, ['laravel-docs', 'lumen-docs', 'laravel-docs.artesaos.org']);
 
 ContributorsByOrg.loadContributors()
   .then(function (constributors) {
