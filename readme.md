@@ -9,7 +9,7 @@ npm install
 ### Comandos disponíveis
 
 ```shell
-npm run start // run http-server
+npm run serve // run http-server
 npm run build
 npm run build:styles
 npm run build:scripts
