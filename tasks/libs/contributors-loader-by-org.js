@@ -59,6 +59,7 @@ class ContributorsLoaderByOrg {
     return _(constributors)
       .uniqWith(_.isEqual)
       .map(user => _.pick(user, ['login', 'avatar_url', 'url', 'html_url']))
+      .orderBy('login')
       .value();
   }
 
