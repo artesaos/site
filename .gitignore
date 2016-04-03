@@ -5,3 +5,4 @@ dist/
 *.log
 /assets/**/*.min.*
 /assets/**/*vendors.*
+.env.json

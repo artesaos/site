@@ -1,7 +1,7 @@
 "use strict";
 const _ = require('lodash');
 const USER = 'artesaos';
-const TOKEN = '';
+const TOKEN = require('../.env.json').GITHUB_AUTH_TOKEN;
 const GitHubApi = require("github");
 
 class ContributorsByOrgLoader {
@@ -15,10 +15,12 @@ class ContributorsByOrgLoader {
         }
       });
 
-    this.github.authenticate({
+    if(!_.isEmpty(token)) {
+      this.github.authenticate({
         type: "oauth",
         token: token
       });
+    }
   }
 
   getRepos() {
