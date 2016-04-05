@@ -41,6 +41,8 @@
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
     "jquery": "^2.2.2",
+    "jquery.localscroll": "^1.4.0",
+    "jquery.scrollto": "^2.1.2",
     "lodash": "^4.6.1",
     "promise": "^7.1.1",
     "shortify": "0.0.6",
@@ -63,7 +65,9 @@
     "vendors": {
       "js": [
         "node_modules/jquery/dist/jquery.min.js",
-        "node_modules/bootstrap/dist/js/bootstrap.min.js"
+        "node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "node_modules/jquery.scrollto/jquery.scrollTo.min.js",
+        "node_modules/jquery.localscroll/jquery.localScroll.min.js"
       ],
       "css": [
         "node_modules/bootstrap/dist/css/bootstrap.min.css"
