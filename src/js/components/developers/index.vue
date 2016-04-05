@@ -32,19 +32,19 @@
 </script>
 
 <template>
-  <section class="developers">
-    <div class="container">
-      <div class="row">
-        <div class="section_header">
-          <h2>Nossos Desenvolvedores</h2>
-          <span class="header_line"></span>
-        </div>
+    <section class="developers" id="developers">
+        <div class="container">
+          <div class="row">
+            <div class="section_header">
+              <h2>Nossos Desenvolvedores</h2>
+              <span class="header_line"></span>
+            </div>
 
-        <div v-bind:class="developer_class"
-             v-for="developer in developers">
-          <developer :member="developer"></developer>
+            <div v-bind:class="developer_class"
+                 v-for="developer in developers">
+              <developer :member="developer"></developer>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 </template>

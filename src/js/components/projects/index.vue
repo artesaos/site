@@ -65,7 +65,7 @@
 </script>
 
 <template>
-    <section class="packages">
+    <section class="packages" id="packages">
         <div class="container">
             <div class="row">
                 <div class="section_header">
